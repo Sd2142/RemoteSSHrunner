@@ -10,7 +10,6 @@ def login():
         paramiko_ssh_client.connect(hostname=host, username='Login', password='PWD', port=22, timeout=4)
     try:
         paramiko_ssh_client.connect(hostname=host, username='login2', password='PWD2', port=22, timeout=4)
-        print(Style.RESET_ALL)
     except socket.timeout:
         print('socket.timeout')
     except socket.gaierror:
