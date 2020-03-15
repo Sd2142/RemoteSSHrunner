@@ -20,8 +20,8 @@ def login():
         print('TimeoutError')
 
 def runcommand():
-    commandlist = list['exit', 'lsusb', 'dmidecode -t1', 'sudo su']
-    EnterCommand = int(input('Exit 0 press 0\n', 'randomcommand1 press 1\n', 'randomcommand2 press 2\n', 'randomcommand3 press 3\n','randomcommand4 press 4\n', ))
+    commandlist = list['exit', 'lsusb', 'dmidecode -t1', 'UNSET histfile', 'top']
+    EnterCommand = int(input('To Exit press 0\n', 'show LSUSB press 1\n', 'Show dmidecode press 2\n', 'User UNSET histfile press 3\n','Show TOP press 4\n', ))
     SentCommand = str(commandlist[EnterCommand])
     if EnterCommand == 0:
         print('Logout and Exit!')
