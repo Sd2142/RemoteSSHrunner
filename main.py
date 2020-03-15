@@ -28,7 +28,7 @@ def runcommand():
         stdin, stdout, stderr = paramiko_ssh_client.exec_command('exit')
         exit(0)
     else:
-        print('Run Command 1')
+        print('вы выбрали команду от 1 до 99999')
         stdin, stdout, stderr = paramiko_ssh_client.exec_command(SentCommand)
         data = stdout.read()
         result1 = data.decode('utf-8')
